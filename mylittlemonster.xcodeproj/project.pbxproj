@@ -12,6 +12,13 @@
 		1F98EDEB1C8B481300A1F014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F98EDE91C8B481300A1F014 /* Main.storyboard */; };
 		1F98EDED1C8B481300A1F014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F98EDEC1C8B481300A1F014 /* Assets.xcassets */; };
 		1F98EDF01C8B481300A1F014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F98EDEE1C8B481300A1F014 /* LaunchScreen.storyboard */; };
+		1F98EDF81C8BE7C800A1F014 /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F98EDF71C8BE7C800A1F014 /* DragImg.swift */; };
+		1F98EDFA1C8D324800A1F014 /* MonsterImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F98EDF91C8D324800A1F014 /* MonsterImg.swift */; };
+		1F98EE001C8DF61100A1F014 /* heart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F98EDFB1C8DF61100A1F014 /* heart.wav */; };
+		1F98EE011C8DF61100A1F014 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F98EDFC1C8DF61100A1F014 /* death.wav */; };
+		1F98EE021C8DF61100A1F014 /* cave-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F98EDFD1C8DF61100A1F014 /* cave-music.mp3 */; };
+		1F98EE031C8DF61100A1F014 /* skull.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F98EDFE1C8DF61100A1F014 /* skull.wav */; };
+		1F98EE041C8DF61100A1F014 /* bite.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F98EDFF1C8DF61100A1F014 /* bite.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		1F98EDEC1C8B481300A1F014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F98EDEF1C8B481300A1F014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F98EDF11C8B481300A1F014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F98EDF71C8BE7C800A1F014 /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImg.swift; sourceTree = "<group>"; };
+		1F98EDF91C8D324800A1F014 /* MonsterImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterImg.swift; sourceTree = "<group>"; };
+		1F98EDFB1C8DF61100A1F014 /* heart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heart.wav; sourceTree = "<group>"; };
+		1F98EDFC1C8DF61100A1F014 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
+		1F98EDFD1C8DF61100A1F014 /* cave-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cave-music.mp3"; sourceTree = "<group>"; };
+		1F98EDFE1C8DF61100A1F014 /* skull.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skull.wav; sourceTree = "<group>"; };
+		1F98EDFF1C8DF61100A1F014 /* bite.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bite.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +70,15 @@
 			children = (
 				1F98EDE51C8B481300A1F014 /* AppDelegate.swift */,
 				1F98EDE71C8B481300A1F014 /* ViewController.swift */,
+				1F98EDF71C8BE7C800A1F014 /* DragImg.swift */,
 				1F98EDE91C8B481300A1F014 /* Main.storyboard */,
+				1F98EDF91C8D324800A1F014 /* MonsterImg.swift */,
 				1F98EDEC1C8B481300A1F014 /* Assets.xcassets */,
+				1F98EDFB1C8DF61100A1F014 /* heart.wav */,
+				1F98EDFC1C8DF61100A1F014 /* death.wav */,
+				1F98EDFD1C8DF61100A1F014 /* cave-music.mp3 */,
+				1F98EDFE1C8DF61100A1F014 /* skull.wav */,
+				1F98EDFF1C8DF61100A1F014 /* bite.wav */,
 				1F98EDEE1C8B481300A1F014 /* LaunchScreen.storyboard */,
 				1F98EDF11C8B481300A1F014 /* Info.plist */,
 			);
@@ -91,11 +112,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = devPro;
 				TargetAttributes = {
 					1F98EDE11C8B481300A1F014 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -122,9 +144,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F98EE041C8DF61100A1F014 /* bite.wav in Resources */,
+				1F98EE011C8DF61100A1F014 /* death.wav in Resources */,
 				1F98EDF01C8B481300A1F014 /* LaunchScreen.storyboard in Resources */,
+				1F98EE031C8DF61100A1F014 /* skull.wav in Resources */,
+				1F98EE001C8DF61100A1F014 /* heart.wav in Resources */,
 				1F98EDED1C8B481300A1F014 /* Assets.xcassets in Resources */,
 				1F98EDEB1C8B481300A1F014 /* Main.storyboard in Resources */,
+				1F98EE021C8DF61100A1F014 /* cave-music.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F98EDFA1C8D324800A1F014 /* MonsterImg.swift in Sources */,
+				1F98EDF81C8BE7C800A1F014 /* DragImg.swift in Sources */,
 				1F98EDE81C8B481300A1F014 /* ViewController.swift in Sources */,
 				1F98EDE61C8B481300A1F014 /* AppDelegate.swift in Sources */,
 			);
@@ -175,8 +204,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -220,8 +251,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -240,6 +273,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -253,6 +287,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devPro.mylittlemonster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -264,6 +299,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devPro.mylittlemonster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -286,6 +322,7 @@
 				1F98EDF61C8B481300A1F014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
